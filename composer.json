@@ -1,6 +1,8 @@
 {
     "type": "project",
-    "license": "proprietary",
+    "license": "EUPL-1.2",
+    "name": "madlaine-madison/aspirant",
+    "description": "Symfony-App to manage and display a printable cv and some other information about a potentially job-seeking aspirant",
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
@@ -15,6 +17,7 @@
         "symfony/yaml": "7.2.*"
     },
     "require-dev": {
+        "lendable/composer-license-checker": "^1.2"
     },
     "config": {
         "allow-plugins": {
@@ -55,7 +58,8 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
-        ]
+        ],
+        "check-licenses": "composer-license-checker"
     },
     "conflict": {
         "symfony/symfony": "*"

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7fa7ba6bb5f8b40063b77f1ecd789779",
+    "content-hash": "93e9ad4962644693829b4e5b06a2d4f6",
     "packages": [
         {
             "name": "psr/cache",
@@ -2419,7 +2419,127 @@
             "time": "2025-01-07T12:55:42+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "lendable/composer-license-checker",
+            "version": "1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Lendable/composer-license-checker.git",
+                "reference": "476039e57ceb3e6899a2d9d448ba5203cdfd6e97"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Lendable/composer-license-checker/zipball/476039e57ceb3e6899a2d9d448ba5203cdfd6e97",
+                "reference": "476039e57ceb3e6899a2d9d448ba5203cdfd6e97",
+                "shasum": ""
+            },
+            "require": {
+                "composer-runtime-api": "^2.2",
+                "php": "~8.2.0 || ~8.3.0 || ~8.4.0",
+                "symfony/console": "^5.4 || ^6.0 || ^7.0",
+                "symfony/process": "^5.4.46 || ^6.4.14 || ^7.1.7"
+            },
+            "require-dev": {
+                "ergebnis/composer-normalize": "^2.43.0",
+                "lendable/phpunit-extensions": "^0.3",
+                "php-cs-fixer/shim": "^3.61.1",
+                "phpstan/phpstan": "^1.11.9",
+                "phpstan/phpstan-deprecation-rules": "^1.2.0",
+                "phpstan/phpstan-phpunit": "^1.4.0",
+                "phpstan/phpstan-strict-rules": "^1.6.0",
+                "phpunit/phpunit": "^11.3.0",
+                "rector/rector": "^1.2.2",
+                "symfony/filesystem": "^6.2"
+            },
+            "bin": [
+                "bin/composer-license-checker"
+            ],
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "Lendable\\ComposerLicenseChecker\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lendable Ltd",
+                    "email": "contact@lendable.co.uk"
+                }
+            ],
+            "description": "Composer license checker",
+            "support": {
+                "issues": "https://github.com/Lendable/composer-license-checker/issues",
+                "source": "https://github.com/Lendable/composer-license-checker/tree/1.2.2"
+            },
+            "time": "2024-11-29T18:58:25+00:00"
+        },
+        {
+            "name": "symfony/process",
+            "version": "v7.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/process.git",
+                "reference": "d34b22ba9390ec19d2dd966c40aa9e8462f27a7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/process/zipball/d34b22ba9390ec19d2dd966c40aa9e8462f27a7e",
+                "reference": "d34b22ba9390ec19d2dd966c40aa9e8462f27a7e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Process\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Executes commands in sub-processes",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/process/tree/v7.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-11-06T14:24:19+00:00"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
